@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style (2).css">
+    <title>Форма</title>
+</head>
+<body>
+    <div class="block">
+        <div class="form">
+            <form action="#" target="" id="form" class="form_body">
+                <h1 class="form_title">Задать вопрос</h1>
+                <div class="form_item">
+                    <input type="text" id="FormName" name="name" class="form_input" 
+                    pattern="^[А-Яа-яЁё]+(?: +|, |-)[А-Яа-яЁё]+)*$" title="Только русские буквы, пробелы, тире. Цифры, англ. буквы – нельзя." 
+                    placeholder="Фамилия Имя Отчество *" required>
+                </div>
+                <div class="form_item">
+                    <input type="tel" id="FormPhone" name="phone" class="form_input" 
+                        pattern="(8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}(\s*)" title="только цифры, “-”, пробелы, “+”. " 
+                    placeholder="Телефон *" required>
+                </div>
+                <div class="form_item">
+                    <input type="email" id="FormEmail" name="email" class="form_input" placeholder="Email">
+                </div>
+                <button type="submit" class="form_button">ОТПРАВИТЬ ЗАПРОС</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
